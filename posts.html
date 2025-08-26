@@ -34,50 +34,94 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Post -->
+						<!-- Title -->
 							<section class="post">
 								<header class="major">
 									<h1>Progress Blog</h1>
-								</header>
-
-								<!-- Text stuff -->
-									<h2>Text</h2>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>.
-									Finally, this is a <a href="#">link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
+								</header>	
+								<hr />
+								<!-- Posts -->
+								<article>
 									<header>
-										<h2>Heading with a Subtitle</h2>
-										<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+										<span class="date">August 25, 2025</span>
+										<h2>Building My NPLQ Revision App: First Steps into React, Firebase, and Version Control</h2>
 									</header>
-									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-									<header>
-										<h3>Heading with a Subtitle</h3>
-										<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-									</header>
-									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-									<header>
-										<h4>Heading with a Subtitle</h4>
-										<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-									</header>
-									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+									
+									<p>Over the course of July, I taught three RLSS NPLQ courses, and above all, the one thing that I took away with me was the severe lack of interactive material available to the candidates. 
+									Their only option was to read from the course manual, and I'm sure that after spending eight hours with me that is the last thing they all wanted to be doing in the evenings. 
+									I decided I wanted to change that, and over the past few weeks I've been working on building a full-stack revision app for the NPLQ qualification. 
+									What started as a relatively simple idea - creating a flashcard bank - has now grown into a fully functional web app with user authentication, quizzes, flashacards and an admin dashboard. 
+									</p>
+									
+									<h3>Choosing the Stack</h3>
 
-									<hr />
+									<p>This was my first time using React and I quickly saw why it is so popular. 
+									The component structure made it straightforward to split the app into smaller parts such as the login form, dashboard and flashcard view, and then put them back together into a single application. 
+									</p> 
+									
+									<p>For the backend, I integrated Firebase as it offered a simple and effective way to manage user authentication and data storage.
+									Firestore allowed me to create databases for my flashcards, quizzes and user progress, and Firebase Authentication ensured each learner had an individual login, while also being able to distinguish between student and admin roles.
+									</p>
 
-								<!-- Image -->
+									<h3>Hosting and Deployment</h3>
 
-									<h3>Left &amp; Right</h3>
-									<p><span class="image left"><img src="images/planet.png" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
-									<p><span class="image right"><img src="images/planet.png" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
+									<p>Once I had the app running locally, I chose Vercel for deployment, due to its smooth GitHub integration.
+									This was the first time I had experienced live deployment, and it was incredibly satisfying to see my app go from local development to a live environment with just a few clicks.
+									</p>
 
-									<hr />
+									<h3>Styling and User Experience</h3>
+
+									<p>I styled the app using CSS, beginning from an incredibly simple interface and gradually adding more complex styles as I went along.
+									I focused on making the user experience as intuitive as possible, ensuring consistency across the design system.
+									I picked a soft blue and red colour scheme and added layouts with flexbox, refined box shadows, card styles and progress bars until the whole app felt polished and easy to use.
+									</p>
+
+									<h3>Learning New Tools</h3>
+
+									<p>This was also my first use of GitHub for version control.
+									At the start, I simply pushed changes as backups, but also began working with commits and rollbacks to keep my progress safe and allow me to feel comfortable taking risks, knowing I can always go back if needed.
+									</p>
+
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-4"><span class="image fit"><img src="images/nplq_app/Main Page.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/nplq_app/User login.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/nplq_app/Admin Login.png" alt="" /></span></div>
+											<!-- Break -->
+											<div class="col-4"><span class="image fit"><img src="images/nplq_app/Dashboard.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/nplq_app/Flashcards.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/nplq_app/Quiz 2.png" alt="" /></span></div>
+										</div>
+									</div>
+
+									<h3>Features</h3>
+
+									<p>The app includes both flashcards and quizzes, organised by course section to make revision more structured. 
+									Quizzes feature a mix of question types, including multiple choice, fill in the blank, drag and drop ordering, and matching pairs. 
+									Learners can track their progress with a timer that records time spent revising, along with counts of completed flashcards and quizzes. 
+									The dashboard gives a simple overview of progress, while separate user and admin logins keep access secure. 
+									Looking ahead, I am working on team functionality and leaderboards so course mates can compare their revision and compete together.
+									</p>
+
+									<h3>Reflections</h3>
+
+									<p>This Web App represents many firsts for me:
+										<ul>
+											<li>My first experience with full-stack development</li>
+											<li>My first time using React for the frontend</li>
+											<li>My first time integrating Firebase for user authentication</li>
+											<li>My first live deployment using Vercel</li>
+											<li>My first project using GitHub for version control</li>
+										</ul>
+									What I thought would be a simple afternoon coding a side project became a deep dive into frontend frameworks, backend integration and deployment strategies.
+									I've learnt how to design and build a complete web application from scratch from just an idea, and the confidence and curiosity I have gained from it will undoubtedly influence my future projects.
+									</p>
+
+								</article>
+
+								<hr />
+
+							</section>
 
 					</div>
 
